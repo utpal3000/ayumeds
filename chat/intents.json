@@ -1,0 +1,666 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, welcome to AyuMeds!",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We DO NOT accept VISA, Mastercard and Paypal",
+        "We accept ONLY cash"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+    "tag": "dolo",
+      "patterns": [
+        "Do you have dolo ?",
+        "what's the price ?",
+        "do this medicine has different types ?"
+      ],
+      "responses": [
+        "yes dolo is available.",
+        "dolo price Rs 100 one strip."
+      ]
+    },
+    {
+      "tag": "Celexa",
+      "patterns": [
+        "do you have Celexa ?",
+        "at what cost ?"
+      ],
+      "responses": [
+        "yes celexa is available.",
+        "Celexa price Rs 150 one strip."
+      ]
+    },
+    {
+      "tag": "simavastatin",
+      "patterns": [
+        "do you have simavastatin ?",
+        "how much it cost ?"
+      ],
+      "responses":[
+        "yes simavastatin is available.",
+        "Rs.200 per strip."
+      ]
+    },
+    {
+      "tag": "Pantaprazole",
+      "patterns":[
+        "is pantaprazole available ?",
+        "how much it cost ?"
+      ],
+      "responses":[
+        "yes Pantaprazole is available.",
+        "Rs.250 per strip."
+
+      ]
+    },
+    {
+      "tag": "Amoxicillin",
+      "patterns":[
+        "i want amoxicillin",
+        "tell me its cost ?",
+        "amoxicillin",
+        "price of amoxicillin",
+        "does it has any side effects ?"
+      ],
+      "responses":[
+        "yes amoxicillin is available here.",
+        "Rs.275 per pack."
+      ]
+    },
+    {
+      "tag": "Metformin",
+      "patterns":[
+        "Metformin please",
+        "tell me its cost ?",
+        "does it has any side effects ?"
+      ],
+      "responses":[
+        "yes Metformin is available here.",
+        "Rs.275 per pack."
+      ]
+    },
+    {
+      "tag": "Lisinopril",
+      "patterns":[
+        "Lisinopril please",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Lisinopril is available here.",
+        "Rs.180 per pack."
+      ]
+    },
+    {
+      "tag": "Atorvastatin",
+      "patterns":[
+        "i want Atorvastatin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Atorvastatin is available here.",
+        "Rs.175 per pack."
+      ]
+    },
+    {
+      "tag": "Levothyroxine",
+      "patterns":[
+        "i want Levothyroxine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Levothyroxine is available here.",
+        "Rs.165 per pack."
+      ]
+    },
+    {
+      "tag": "Metoprolol",
+      "patterns":[
+        "i want Metoprolol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Metoprolol is available here.",
+        "Rs.155 per pack."
+      ]
+    },
+    {
+      "tag": "Omeprazole",
+      "patterns":[
+        "i want Omeprazole",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Omeprazole is available here.",
+        "Rs.135 per pack."
+      ]
+    },
+    {
+      "tag": "Albuterol",
+      "patterns":[
+        "i want Albuterol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Albuterol is available here.",
+        "Rs.145 per pack."
+      ]
+    },
+    {
+      "tag": "Losartan",
+      "patterns":[
+        "i want Losartan",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Losartan is available here.",
+        "Rs.199 per pack."
+      ]
+    },
+    {
+      "tag": "wincold",
+      "patterns":[
+        "i want wincold",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes wincold is available here.",
+        "Rs.99 per pack."
+      ]
+    },
+    {
+      "tag": "Dexamethasone",
+      "patterns":[
+        "i want Dexamethasone",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Dexamethasone is available here.",
+        "Rs.55 per pack."
+      ]
+    },
+    {
+      "tag": "Diclowin Plus",
+      "patterns":[
+        "i want Diclowin Plus",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Diclowin Plus is available here.",
+        "Rs.75 per pack."
+      ]
+    },
+    {
+      "tag": "Disprin",
+      "patterns":[
+        "do you have Disprin ?",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Disprin is available here.",
+        "Rs.40 per strip."
+      ]
+    },
+    {
+      "tag": "Acilok",
+      "patterns":[
+        "is Acilok available ?",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Acilok is available here.",
+        "Rs.60 per pack."
+      ]
+    },
+    {
+      "tag": "Rabiprazole",
+      "patterns":[
+        "i want Rabiprazole",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Rabiprazole is available here.",
+        "Rs.70 per pack."
+      ]
+    },
+    {
+      "tag": "A TO Z",
+      "patterns":[
+        "i want A TO Z",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes A TO Z is available here.",
+        "Rs.80 per pack."
+      ]
+    },
+    {
+      "tag": "Brufen",
+      "patterns":[
+        "i want Brufen",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Brufen is available here.",
+        "Rs.79 per pack."
+      ]
+    },
+    {
+      "tag": "Ofloxacin",
+      "patterns":[
+        "i want Ofloxacin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Ofloxacin is available here.",
+        "Rs.55 per pack."
+      ]
+    },
+    {
+      "tag": "Chloramphenicol",
+      "patterns":[
+        "i want Chloramphenicol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Chloramphenicol is available here.",
+        "Rs.66 per pack."
+      ]
+    },
+    {
+      "tag": "Aspirin",
+      "patterns":[
+        "i want Aspirin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Aspirin is available here.",
+        "Rs.89 per pack."
+      ]
+    },
+    {
+      "tag": "Cetrizine",
+      "patterns":[
+        "i want Cetrizine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Cetrizine is available here.",
+        "Rs.80 per pack."
+      ]
+    },
+    {
+      "tag": "Salbutamol",
+      "patterns":[
+        "i want Salbutamol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes Salbutamol is available here.",
+        "Rs.90 per pack."
+      ]
+    },
+    {
+      "tag": "paracetamol",
+      "patterns":[
+        "i want paracetaolm",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes paracetaolm is available here.",
+        "Rs.35 per strip."
+      ]
+    },
+    {
+      "tag": "oseltamivir",
+      "patterns":[
+        "i want oseltamivir",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes oseltamivir is available here.",
+        "Rs.110 per pack."
+      ]
+    },
+    {
+      "tag": "diclofence",
+      "patterns":[
+        "i want diclofence",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes diclofence is available here.",
+        "Rs.45 per pack."
+      ]
+    },
+    {
+      "tag": "endosulfan",
+      "patterns":[
+        "i want endosulfan",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes endosulfan is available here.",
+        "Rs.78 per pack."
+      ]
+    },
+    {
+      "tag": "modafinil",
+      "patterns":[
+        "i want modafinil",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes modafinil is available here.",
+        "Rs.90 per pack."
+      ]
+    },
+    {
+      "tag": "nimesulide",
+      "patterns":[
+        "i want nimesulide",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes nimesulide is available here.",
+        "Rs.130 per pack."
+      ]
+    },
+    {
+      "tag": "oxytocin",
+      "patterns":[
+        "i want oxytocin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes oxytocin is available here.",
+        "Rs.125 per pack."
+      ]
+    },
+    {
+      "tag": "sildenafil citrate",
+      "patterns":[
+        "i want Ofloxacin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes sildenafil citrate is available here.",
+        "Rs.135 per pack."
+      ]
+    },
+    {
+      "tag": "chloroquine",
+      "patterns":[
+        "i want chloroquine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes chloroquine is available here.",
+        "Rs.145 per pack."
+      ]
+    },
+    {
+      "tag": "zolpidem",
+      "patterns":[
+        "i want zolpidem",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes zolpidem is available here.",
+        "Rs.160 per pack."
+      ]
+    },
+    {
+      "tag": "venelafaxine",
+      "patterns":[
+        "i want venelafaxine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes venelafaxine is available here.",
+        "Rs.167 per pack."
+      ]
+    },
+    {
+      "tag": "ranitinine",
+      "patterns":[
+        "i want ranitinine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes ranitinine is available here.",
+        "Rs.121 per pack."
+      ]
+    },
+    {
+      "tag": "duloxetine",
+      "patterns":[
+        "i want duloxetine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes duloxetine is available here.",
+        "Rs.70 per pack."
+      ]
+    },
+    {
+      "tag": "glipizide",
+      "patterns":[
+        "i want glipizide",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes glipizide is available here.",
+        "Rs.101 per pack."
+      ]
+    },
+    {
+      "tag": "potassium",
+      "patterns":[
+        "i want potassium",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes potassium is available here.",
+        "Rs.109 per pack."
+      ]
+    },
+    {
+      "tag": "atenolol",
+      "patterns":[
+        "i want atenolol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes atenolol is available here.",
+        "Rs.124 per pack."
+      ]
+    },
+    {
+      "tag": "tamsulosin",
+      "patterns":[
+        "i want tamsulosin",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes tamsulosin is available here.",
+        "Rs.235 per pack."
+      ]
+    },
+    {
+      "tag": "insulin glargine",
+      "patterns":[
+        "i want insulin glargine",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes insulin glargine is available here.",
+        "Rs.234 per pack."
+      ]
+    },
+    {
+      "tag": "ibuprofen ",
+      "patterns":[
+        "i want ibuprofen",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes ibuprofen is available here.",
+        "Rs.340 per pack."
+      ]
+    },
+    {
+      "tag": "bupropion",
+      "patterns":[
+        "i want bupropion",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes bupropion is available here.",
+        "Rs.143 per pack."
+      ]
+    },
+    {
+      "tag": "fluticasone",
+      "patterns":[
+        "i want fluticasone",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes fluticasone is available here.",
+        "Rs.139 per pack."
+      ]
+    },
+    {
+      "tag": "furosemide",
+      "patterns":[
+        "i want furosemide",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes furosemide is available here.",
+        "Rs.138 per pack."
+      ]
+    },
+    {
+      "tag": "escitalopram",
+      "patterns":[
+        "i want escitalopram",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes escitalopram is available here.",
+        "Rs.137 per pack."
+      ]
+    },
+    {
+      "tag": "carvedilol",
+      "patterns":[
+        "i want carvedilol",
+        "tell me its cost ?",
+        "any side effects ?"
+      ],
+      "responses":[
+        "yes carvedilol is available here.",
+        "Rs.133 per pack."
+      ]
+    }
+  ]
+}
+
+    
+  
+
+  
+
