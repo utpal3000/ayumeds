@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--Start Navbar-->
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">AyuMeds</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="/">Products </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Brands
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% for brand in brands %}
+                <a class="dropdown-item" href="{{url_for('get_brand', id=brand.id)}}">{{brand.name}}</a>
+                {% endfor %}
+              </div>
+            </li>
+             
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {% for category in categories %}
+                  <a class="dropdown-item" href="{{url_for('get_category',id=category.id)}}">{{category.name}}</a>
+                  {% endfor %}
+                </div>
+              </li>
+             {% if current_user.is_authenticated %}
+             <li class="nav-item">
+              <a href="{{url_for('customer_logout')}}" class="nav-link">{{current_user.name}}</a>
+            </li>
+             <li class="nav-item">
+               <a href="{{url_for('customer_logout')}}" class="nav-link"> Logout</a>
+             </li>
+             {% else %}
+             <li class="nav-item">
+              <a href="{{url_for('customer_register')}}" class="nav-link">Sign in</a>
+            </li>
+             <li class="nav-item">
+              <a href="{{url_for('customerLogin')}}" class="nav-link">login<span class="sr-only">(current)</span></a>
+            </li>
+            {% endif %}
+              <li class="nav-item" >
+                <a href="{{url_for('getCart')}}" class="nav-link disabled"> Cart ({{ session['Shoppingcart']|length }}) </a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="{{url_for('result')}}">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+     
+</div>
+<!--End Navbar-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="text-center bg-info p-2 h4">Login</div>
+                {% from "_formhelpers.html" import render_field %}
+                {% include '_messages.html' %}
+                <form method=post>
+                    {{form.csrf_token}}
+                <div>
+                    {{ render_field(form.email, class="form-control") }}
+                    {{ render_field(form.password, class="form-control") }}
+                </div>
+                <p><input type="submit" value="Login" class="btn-info">
+                </form>
+            </div>
+      <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock content %}
